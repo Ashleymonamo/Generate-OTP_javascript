@@ -1,4 +1,5 @@
 console.log("running")
+// let output=document.getElementById("outpt").value;
 function OTPCode() {
     let opt=document.getElementById("pin").value
     if (opt=="Alpha-numeric") {
@@ -9,9 +10,8 @@ function OTPCode() {
           const randomIndex = Math.floor(Math.random() * characters.length);
           otp += characters[randomIndex];
         }
-        let items=[{Pin:otp}];
-        localStorage.setItem("OTP",JSON.stringify(items));
         
+        document.getElementById("outpt").value=otp;
       console.log(otp);   
     }
     else if (opt=="Numeric")
@@ -26,8 +26,7 @@ function OTPCode() {
             i++;
     
         }
-        let items=[{Pin:optValue}];
-        localStorage.setItem("OTP",JSON.stringify(items));
+        document.getElementById("outpt").value=optValue;
         console.log(optValue);
     }
     // const otpLength=6;

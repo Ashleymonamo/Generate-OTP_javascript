@@ -2,7 +2,7 @@
 {
 text-align: center;
 justify-content: center;
-height: 150px;
+height: 180px;
 }
 button
 {
@@ -17,4 +17,25 @@ margin-top: 10px;
 select
 {
     padding: 5px;
+}
+.output
+{
+   position: relative;
+    display: flex;
+    flex-direction: row;
+margin-left: 65px;
+
+
+
+}
+.output input
+{
+    padding: 5px;
+    width: 100px;
+    height: 15px;
+margin-top: 13px;
+    border: none;
+    outline: 0;
+    color: black;
+
 }

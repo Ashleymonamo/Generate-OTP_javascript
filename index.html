@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculate</title>
+    <title>Generate OTP</title>
+ <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body >
     
-<div class="container">
-    <button onclick="OTPCode()">Click</button>
-    <h4>Your OPT is <span id="otp" onchange="OTPCode() "></span></h4>
+<div class="container" >
+       <fieldset style="width:420px;height:100px">
+    <legend><strong>One-Time Pin</strong></legend>
+    <div class="content">
+        <label for="pin">Generate Code:</label>
+
+    <select name="pin" id="pin">
+        <option value="Select">Select</option>
+        <option value="Alpha-numeric">Alpha-numeric</option>
+        <option value="Numeric">Numeric</option>
+    </select>
+    
+    </div>
+    <button onclick="OTPCode()"> Click</button>
+    </fieldset>
 </div>
     <script src="script.js"></script>
 </body>
